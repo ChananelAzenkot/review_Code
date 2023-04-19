@@ -5,13 +5,14 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     height: 100vh;
-    
-    
 }
 
+/* // work on this */
 .container{
     height: 100%;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 input {
@@ -31,7 +32,7 @@ input {
 
 
 .card{
-    height: 50px;
+    height: 60px;
     width: 650px;
     font-size: 30px;
     background-image: linear-gradient(to bottom right, #007380, #9c5f5f);
@@ -39,9 +40,12 @@ input {
     margin: 20px auto;
     border-radius: 5px;
     text-shadow: 1px 2px 10px black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .card_enter{
-    animation: enter ease-in-out 1s;
+    animation: enter ease-in-out 0.5s;
 }
 
 @keyframes enter {
@@ -95,6 +99,22 @@ input {
     color: white;
     text-shadow: 1px 2px 10px white;
 }
+#btnenter {
+    height: 45px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 2px 12px 1px black;
+    font-size: 21px;
+    margin: 10px;
+}
+#btnenter:active {
+    transition: 0.2s linear;
+    box-shadow: 1px 2px 15px 1px white inset;
+    background-color: black;
+    color: white;
+    text-shadow: 1px 2px 10px white;
+}
 #btnF{
     height: 30px;
     width: 50px;
@@ -102,7 +122,7 @@ input {
     border-radius: 25px;
     box-shadow: 1px 2px 12px 1px black;
     font-size: 21px;
-    margin: 1px;
+    margin: 10px;
 }
 
 #btnF:active {
@@ -184,7 +204,7 @@ input {
 }
 
 .bigedit{
-    animation: enter1 ease-in-out 1s;
+    animation: enter1 ease-in-out 0.5s;
 }
 
 @keyframes enter1 {
@@ -195,4 +215,18 @@ input {
     to {
         opacity: 1;
     }
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.3;
+        background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
+        color: black;
+}
+
+.completed:hover{
+    text-decoration: line-through;
+    opacity: 0.4;
+    background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
+    color: black;
 }

@@ -23,6 +23,12 @@ if (localStorage.length > 0) {
 }
 showMissions();
 
+const btnenter = document.getElementById("btnenter");
+
+btnenter.addEventListener("click",() => {
+  writeMissionOnScreen( {keyCode: "13"});
+});
+
 // take the value from the input and push it to the array//
 function writeMissionOnScreen(eventDataFromBrowser) {
   if (eventDataFromBrowser.keyCode == "13") {
@@ -91,14 +97,17 @@ function editMission(index) {
   });
 }
 
-
 // delete all  mission from the page//
 function deleteMission(index) {
   missions.splice(index, 1);
   showMissions();
 }
 
-// show all missions from the array//
+function completeMission(index) {
+  missions[index].completed = !missions[index].completed;
+  showMissions();
+}
+
 function showMissions() {
   container.innerHTML = "";
   for (let i = 1; i < missions.length; i++) {
@@ -107,10 +116,14 @@ function showMissions() {
     const mission = missions[i];
     divElement.innerHTML += `
           ${i}. ${mission.date} - ${mission.text} 
-          <button id="btnF" onclick="deleteMission(${i})"> ❌ </button> 
-          <button id="btnF" onclick="editMission(${i})"> 🖋️ </button> 
+          <button id="btnF" onclick="deleteMission(${i})"> ❌ </button>
+          <button id="btnF" onclick="completeMission(${i})"> ✅ </button>
+          <button id="btnF" onclick="editMission(${i})"> 🖋️ </button>
           <br>
           `;
+    if (mission.completed) {
+      divElement.classList.add("completed");
+    }
     container.appendChild(divElement);
   }
   saveMissions();
