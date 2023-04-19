@@ -10,14 +10,15 @@ divElement.classList.add("card", "card_enter");
 // posh container inside the page body//
 document.body.appendChild(container);
 
-
 // let counter mission start from 1//
 let missions = [0];
 
 // push for every mission key and value to the array//
 if (localStorage.length > 0) {
-  Object.keys(localStorage).sort().forEach(function (key) {
-      missions.push(localStorage.getItem(key));
+  Object.keys(localStorage)
+    .sort()
+    .forEach(function (key) {
+      missions.push(JSON.parse(localStorage.getItem(key)));
     });
 }
 showMissions();
@@ -26,14 +27,26 @@ showMissions();
 function writeMissionOnScreen(eventDataFromBrowser) {
   if (eventDataFromBrowser.keyCode == "13") {
     const textBox = document.getElementById("txtMission");
-    missions.push(textBox.value);
+    const currentDate = new Date()
+      .toLocaleDateString("he-IL", {
+        year: "2-digit",
+        month: "2-digit",
+        day: "2-digit",
+      })
+      .replaceAll("/", ".");
+    const mission = {
+      date: currentDate,
+      text: textBox.value.trim(),
+    };
+    missions.push(mission);
     textBox.value = "";
+    saveMissions();
     showMissions();
   }
 }
-
 // clear all missions from the array//
 function clearAllMissions() {
+  localStorage.clear();
   missions = [0];
   showMissions();
 }
@@ -56,15 +69,20 @@ function editMission(index) {
   bigedit.appendChild(no);
   bigedit.appendChild(fiximiss);
   fiximiss.classList.add("fiximiss");
+  fiximiss.value = missions[index].text;
   fiximiss.addEventListener("keyup", () => {
     if (fiximiss.value.trim().length > 0) {
-      missions[index] = fiximiss.value.trim();
+      missions[index] = {
+        date: missions[index].date,
+        text: fiximiss.value.trim(),
+      };
     }
   });
 
   yes.addEventListener("click", () => {
     bigedit.style.display = "none";
     showMissions();
+    saveMissions();
     document.getElementById("blur").style.display = "none";
   });
   no.addEventListener("click", () => {
@@ -72,6 +90,7 @@ function editMission(index) {
     document.getElementById("blur").style.display = "none";
   });
 }
+
 
 // delete all  mission from the page//
 function deleteMission(index) {
@@ -85,20 +104,23 @@ function showMissions() {
   for (let i = 1; i < missions.length; i++) {
     const divElement = document.createElement("div");
     divElement.classList.add("card", "card_enter");
+    const mission = missions[i];
     divElement.innerHTML += `
-          ${i}. ${missions[i]} 
+          ${i}. ${mission.date} - ${mission.text} 
           <button id="btnF" onclick="deleteMission(${i})"> ❌ </button> 
           <button id="btnF" onclick="editMission(${i})"> 🖋️ </button> 
           <br>
           `;
     container.appendChild(divElement);
   }
+  saveMissions();
 }
+
 // save all missions in the local storage//
 function saveMissions() {
   localStorage.clear();
   for (let i = 1; i < missions.length; i++) {
     const mission = missions[i];
-    localStorage.setItem(i , mission);
+    localStorage.setItem(i, JSON.stringify(mission));
   }
 }

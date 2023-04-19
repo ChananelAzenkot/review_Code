@@ -32,7 +32,7 @@ input {
 
 .card{
     height: 50px;
-    width: 600px;
+    width: 650px;
     font-size: 30px;
     background-image: linear-gradient(to bottom right, #007380, #9c5f5f);
     box-shadow: 1px 2px 8px 1px black;
@@ -79,10 +79,10 @@ input {
     }
 
 #BtNremoveAll{
-    height: 60px;
-    width: 138px;
+    height: 45px;
+    width: 150px;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow:1px 2px 12px 1px black;
     font-size: 21px;
     margin: 10px;
