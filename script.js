@@ -1,3 +1,4 @@
+
 // create container div and let name it container//
 const container = document.createElement("div");
 container.classList.add("container");
@@ -9,14 +10,15 @@ divElement.classList.add("card", "card_enter");
 // posh container inside the page body//
 document.body.appendChild(container);
 
-// let counter mission start from 1// 
+
+// let counter mission start from 1//
 let missions = [0];
 
 // push for every mission key and value to the array//
 if (localStorage.length > 0) {
-  Object.keys(localStorage).forEach(function (key) {
-    missions.push(localStorage.getItem(key));
-  });
+  Object.keys(localStorage).sort().forEach(function (key) {
+      missions.push(localStorage.getItem(key));
+    });
 }
 showMissions();
 
@@ -95,7 +97,8 @@ function showMissions() {
 // save all missions in the local storage//
 function saveMissions() {
   localStorage.clear();
-  for (var i = 1; i < missions.length; i++) {
-    localStorage.setItem(i + 1, missions[i]);
+  for (let i = 1; i < missions.length; i++) {
+    const mission = missions[i];
+    localStorage.setItem(i , mission);
   }
 }
