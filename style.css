@@ -218,6 +218,7 @@ input {
 }
 
 .completed {
+    font-weight: 200;
     text-decoration: line-through;
     opacity: 0.3;
         background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
@@ -229,4 +230,5 @@ input {
     opacity: 0.4;
     background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
     color: black;
+
 }
