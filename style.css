@@ -237,10 +237,10 @@ input {
     background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
     color: black;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 428px) {
     input{
         height: 30px;
-        width: 170px;
+        width: 250px;
         font-size: 18px;
     }
     .titleFirst{
@@ -250,12 +250,12 @@ input {
         font-size: 30px;
     }
     .card{
-        height: 50px;
+        height: 70px;
         width: 300px;
         font-size: 18px;
     }
     .card:hover{
-        height: 50px;
+        height: 70px;
         width: 300px;
         font-size: 18px;
     }
@@ -263,26 +263,26 @@ input {
         animation: enter ease-in-out 0.5s;
     }
     .bigedit{
-        width: 200px;
+        width: 265px;
         height: 150px;
     }
     .yes{
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
         margin: 5px;
     }
     .no{
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
         margin: 5px;
     }
     #BtNremoveAll{
-        height: 30px;
+        height: 40px;
         width: 100px;
         font-size: 16px;
     }
     #btnenter {
-        height: 30px;
+        height: 40px;
         width: 100px;
         font-size: 16px;
     }
