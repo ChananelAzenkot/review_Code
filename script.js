@@ -1,4 +1,3 @@
-
 // create container div and let name it container//
 const container = document.createElement("div");
 container.classList.add("container");
@@ -25,8 +24,8 @@ showMissions();
 
 const btnenter = document.getElementById("btnenter");
 
-btnenter.addEventListener("click",() => {
-  writeMissionOnScreen( {keyCode: "13"});
+btnenter.addEventListener("click", () => {
+  writeMissionOnScreen({ keyCode: "13" });
 });
 
 // take the value from the input and push it to the array//
@@ -110,22 +109,28 @@ function completeMission(index) {
 
 function showMissions() {
   container.innerHTML = "";
+  const incompleteMissions = [];
+  const completedMissions = [];
   for (let i = 1; i < missions.length; i++) {
+    const mission = missions[i];
     const divElement = document.createElement("div");
     divElement.classList.add("card", "card_enter");
-    const mission = missions[i];
     divElement.innerHTML += `
-          ${i}. ${mission.date} - ${mission.text} 
-          <button id="btnF" onclick="deleteMission(${i})"> ❌ </button>
-          <button id="btnF" onclick="completeMission(${i})"> ✅ </button>
-          <button id="btnF" onclick="editMission(${i})"> 🖋️ </button>
-          <br>
-          `;
+      ${i}. ${mission.date} - ${mission.text} 
+      <button id="btnF" onclick="deleteMission(${i})"> ❌ </button>
+      <button id="btnF" onclick="completeMission(${i})"> ✅ </button>
+      <button id="btnF" onclick="editMission(${i})"> 🖋️ </button>
+      <br>
+    `;
     if (mission.completed) {
       divElement.classList.add("completed");
+      completedMissions.push(divElement);
+    } else {
+      incompleteMissions.push(divElement);
     }
-    container.appendChild(divElement);
   }
+  incompleteMissions.forEach((mission) => container.appendChild(mission));
+  completedMissions.forEach((mission) => container.appendChild(mission));
   saveMissions();
 }
 
