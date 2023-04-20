@@ -64,6 +64,8 @@ input {
     color: #bab9b9;
     box-shadow: 1px 2px 5px 1px black;
     text-shadow: 1px 2px 6px black;
+    height: 75px;
+    width: 700px;
 }
 .titleFirst{
     text-align: center;
@@ -96,6 +98,8 @@ input {
     background-color: black;
     color: white;
     text-shadow: 1px 2px 10px white;
+    height: 65px;
+    width: 165px;
 }
 #btnenter {
     height: 45px;
@@ -112,6 +116,8 @@ input {
     background-color: black;
     color: white;
     text-shadow: 1px 2px 10px white;
+    height: 65px;
+    width: 165px;
 }
 #btnF{
     height: 30px;
@@ -129,6 +135,8 @@ input {
     background-color: black;
     color: white;
     text-shadow: 1px 2px 10px white;
+    height: 40px;
+    width: 55px;
 }
 
 .yes{
@@ -228,4 +236,64 @@ input {
     opacity: 0.4;
     background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
     color: black;
+}
+@media screen and (max-width: 600px) {
+    input{
+        height: 30px;
+        width: 180px;
+        font-size: 18px;
+    }
+    .titleFirst{
+        font-size: 24px;
+    }
+    .img_title{
+        font-size: 30px;
+    }
+    .card{
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+    }
+    .card:hover{
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+    }
+    .card_enter{
+        animation: enter ease-in-out 0.5s;
+    }
+    .bigedit{
+        width: 200px;
+        height: 150px;
+    }
+    .yes{
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
+    .no{
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
+    #BtNremoveAll{
+        height: 30px;
+        width: 100px;
+        font-size: 16px;
+    }
+    #btnenter {
+        height: 30px;
+        width: 100px;
+        font-size: 16px;
+    }
+    #btnF{
+        height: 20px;
+        width: 30px;
+        font-size: 16px;
+    }
+    .fiximiss{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
