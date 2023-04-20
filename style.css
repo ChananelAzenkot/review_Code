@@ -237,10 +237,10 @@ input {
     background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
     color: black;
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 425px) {
     input{
         height: 30px;
-        width: 180px;
+        width: 170px;
         font-size: 18px;
     }
     .titleFirst{
