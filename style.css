@@ -237,7 +237,7 @@ input {
     background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
     color: black;
 }
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 428px) {
     input{
         height: 30px;
         width: 250px;
