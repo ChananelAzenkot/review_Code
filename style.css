@@ -237,61 +237,73 @@ input {
     background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
     color: black;
 }
-@media screen and (max-width: 428px) {
-    input{
-        height: 30px;
-        width: 250px;
+@media screen and (min-width: 428px) {
+    input {
+        height: 60px;
+        width: 400px;
         font-size: 18px;
     }
-    .titleFirst{
-        font-size: 24px;
-    }
-    .img_title{
+
+    .titleFirst {
         font-size: 30px;
     }
-    .card{
+
+    .img_title {
+        font-size: 30px;
+    }
+
+    .card {
+        height: 80px;
+        width: 450px;
+        font-size: 29px;
+    }
+
+    .card:hover {
         height: 70px;
         width: 300px;
         font-size: 18px;
     }
-    .card:hover{
-        height: 70px;
-        width: 300px;
-        font-size: 18px;
-    }
-    .card_enter{
+
+    .card_enter {
         animation: enter ease-in-out 0.5s;
     }
-    .bigedit{
+
+    .bigedit {
         width: 265px;
         height: 150px;
     }
-    .yes{
+
+    .yes {
         height: 50px;
         width: 50px;
         margin: 5px;
     }
-    .no{
+
+    .no {
         height: 50px;
         width: 50px;
         margin: 5px;
     }
-    #BtNremoveAll{
-        height: 40px;
-        width: 100px;
+
+    #BtNremoveAll {
+        height: 80px;
+        width: 150px;
         font-size: 16px;
     }
+
     #btnenter {
-        height: 40px;
-        width: 100px;
+        height: 80px;
+        width: 150px;
         font-size: 16px;
     }
-    #btnF{
+
+    #btnF {
         height: 20px;
         width: 30px;
         font-size: 16px;
     }
-    .fiximiss{
+
+    .fiximiss {
         display: flex;
         align-items: center;
         flex-direction: column;
