@@ -42,6 +42,7 @@ function writeMissionOnScreen(eventDataFromBrowser) {
     const mission = {
       date: currentDate,
       text: textBox.value.trim(),
+      important: document.getElementById("chkImportant").checked,
     };
     missions.push(mission);
     textBox.value = "";
@@ -49,6 +50,7 @@ function writeMissionOnScreen(eventDataFromBrowser) {
     showMissions();
   }
 }
+
 // clear all missions from the array//
 function clearAllMissions() {
   localStorage.clear();
@@ -115,6 +117,9 @@ function showMissions() {
     const mission = missions[i];
     const divElement = document.createElement("div");
     divElement.classList.add("card", "card_enter");
+    if (mission.important) {
+      divElement.classList.add("important");
+    }
     divElement.innerHTML += `
       ${i}. ${mission.date} - ${mission.text} 
       <button id="btnF" onclick="deleteMission(${i})"> ❌ </button>
@@ -133,6 +138,7 @@ function showMissions() {
   completedMissions.forEach((mission) => container.appendChild(mission));
   saveMissions();
 }
+
 
 // save all missions in the local storage//
 function saveMissions() {
