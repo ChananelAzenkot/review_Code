@@ -1,7 +1,7 @@
 
 body {
     direction: rtl;
-    background-image: linear-gradient(to bottom right, #c58a8a, #619fa6);
+    background-image: linear-gradient(to bottom right, #c1c0c0fa, #388d97d8);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     height: 100vh;
@@ -16,23 +16,23 @@ body {
 }
 
 input {
-    width: 600px;
-    height: 30px;
+    width: 450px;
+    height: 37px;
     font-weight: bold;
     font-size: 25px;
     border: 0.5px solid black;
     margin: 10px;
     border-radius:10px;
-    box-shadow: 1px 2px 18px 3px #9c5f5f;
+    box-shadow: 1px 2px 12px 3px #388d97d8;
     text-shadow: 1px 2px 3px black;
     text-align: center;
 }
 
 .card{
-    height: 50px;
-    width: 600px;
-    font-size: 25px;
-    background-image: linear-gradient(to bottom right, #7f9a9d, #7f7171bd);
+    height: 37px;
+    width: 450px;
+    font-size: 20px;
+    background-image: linear-gradient(to bottom right, #a3a1a1,#388d97d8);
     box-shadow: 1px 2px 13px 1px black;
     margin: 10px auto;
     border-radius: 5px;
@@ -42,6 +42,7 @@ input {
     display: flex;
     font-weight: 300;
     transition: 0.2s linear;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .card_enter{
     animation: enter ease-in-out 0.5s;
@@ -60,21 +61,22 @@ input {
 }
 .card:hover{
     transition: 0.2s linear;
-    background-image: linear-gradient(to bottom right, #878787, #678385);
+    background-image: linear-gradient(to bottom right, #388d97d8, #a3a1a1);
     color: #bab9b9;
     box-shadow: 1px 2px 5px 1px black;
     text-shadow: 1px 2px 6px black;
-    height: 55px;
-    width: 620px;
+    height: 40px;
+    width: 470px;
 }
 .titleFirst{
     text-align: center;
     font-size: 40px;
-    background: -webkit-linear-gradient(#c37a7a, #619fa6);
+    background: -webkit-linear-gradient(#388d97d8, #cdcbcb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(2px 2px 11px black);
     padding: 10px;
+    font-family: 'Sigmar', cursive;
 }
     .img_title{
         font-size: 40px;
@@ -83,13 +85,14 @@ input {
     }
 
 #BtNremoveAll{
-    height: 45px;
-    width: 150px;
+    height:50px;
+    width: 110px;
     border: none;
     border-radius: 10px;
     box-shadow:1px 2px 12px 1px black;
-    font-size: 21px;
+    font-size: 14px;
     margin: 10px;
+    font-family: 'Monoton', cursive;
 }
 
 #BtNremoveAll:active{
@@ -98,17 +101,18 @@ input {
     background-color: black;
     color: white;
     text-shadow: 1px 2px 10px white;
-    height: 65px;
-    width: 165px;
+    height: 40px;
+    width: 120px;
 }
 #btnenter {
-    height: 45px;
-    width: 115px;
+    height: 60px;
+    width: 100px;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 2px 12px 1px black;
-    font-size: 21px;
+    font-size: 14px;
     margin: 10px;
+    font-family: 'Monoton', cursive;
 }
 #btnenter:active {
     transition: 0.2s linear;
@@ -120,14 +124,14 @@ input {
     width: 165px;
 }
 #btnF{
-    height: 30px;
-    width: 45px;
+    height: 25px;
+    width: 30px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 1px 2px 12px 1px black;
-    font-size: 21px;
+    font-size: 10px;
     margin: 10px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 #btnF:active {
@@ -137,7 +141,7 @@ input {
     color: white;
     text-shadow: 1px 2px 10px white;
     height: 35px;
-    width: 55px;
+    width: 40px;
 }
 
 .yes{
@@ -185,7 +189,7 @@ input {
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 5;
-    background-image: linear-gradient(to bottom right, #7f9a9d, #716161);
+    background-image: linear-gradient(to bottom right,#388d97d8,#a3a1a1);
     border-radius: 10px;
 }
 
@@ -236,8 +240,8 @@ input {
     text-decoration: line-through;
     background-image: linear-gradient(to bottom right, #6aa18a, #4f4e4e);
     color: black;
-    height: 65px;
-    width: 650px;
+    height: 37px;
+    width: 450px;
 }
 
 .important {
@@ -247,9 +251,9 @@ input {
 .chacky[type="checkbox"]{
     content: "";
     -webkit-appearance: none;
-    height: 25px;
-    width: 25px;
-    background-color: #c4c0c0;
+    height: 20px;
+    width: 20px;
+    background-color: #868686d2;
     border-radius: 4px;
     cursor: pointer;
     outline: 1px solid black;
@@ -265,8 +269,8 @@ input {
     transform-origin: bottom left;
 }
 .chacky[type="checkbox"]:hover{
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
     transition: 0.3s linear;
     background-color: #6eda70;
     cursor: pointer;
@@ -276,21 +280,23 @@ input {
 }
 
 .chackstyle{
-    font-size: 22px;
-    text-shadow: 1px 2px 6px black;
+    font-size: 20px;
+    text-shadow: 1px 2px 2px black;
 }
 
 #importAndEnter{
+    font-family: 'Sigmar', cursive;
     position: absolute;
     display:inline-flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 18%;
-    border: 2px solid black;
+    height: 32px;
+    width: 17.5%;
+    border: 2px solid #388d97d8;
+    color: #388d97d8;
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
-    left: 11%;
-    top:49px;
+    left: 16.5%;
+    top:90px;
 }
