@@ -9,7 +9,9 @@
 
   <body>
     <div id="blur"></div>
-    <h1 class="img_title">🥹<span class="titleFirst"> Wired Along Your Task</span></h1>
+    <h1 class="img_title"
+      >🥹<span class="titleFirst"> Wired Along Your Task</span></h1
+    >
     <input
       autocomplete="off"
       onblur="setFocusOnTxtMission()"
@@ -17,11 +19,20 @@
       id="txtMission"
       placeholder="Write Your Next Mission ! ✏️"
       onkeydown="writeMissionOnScreen(event)" />
-      <label class="chackstyle" for="importantCheckbox">Important</label>
+    <br />
+    <div id="importAndEnter">
+      <label class="chackstyle" for="importantCheckbox">Important |</label>
       <input class="chacky" type="checkbox" id="chkImportant" />
       <button id="btnenter">Enter Task</button>
-    <h1 class="img_title" >⛑️<span class="titleFirst" style="font-size: 45px;"> Your Task To Do</span></h1>
-    <button id="BtNremoveAll" onclick="clearAllMissions()">Clear 🧹 Tasks </button>
+    </div>
+    <h1 class="img_title"
+      >⛑️<span class="titleFirst" style="font-size: 30px">
+        Your Task To Do</span
+      ></h1
+    >
+    <button id="BtNremoveAll" onclick="clearAllMissions()"
+      >Clear 🧹 Tasks
+    </button>
     <br />
   </body>
 </html>

@@ -17,7 +17,7 @@ body {
 
 input {
     width: 600px;
-    height: 50px;
+    height: 30px;
     font-weight: bold;
     font-size: 25px;
     border: 0.5px solid black;
@@ -68,7 +68,7 @@ input {
 }
 .titleFirst{
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     background: -webkit-linear-gradient(#c37a7a, #619fa6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -76,7 +76,7 @@ input {
     padding: 10px;
 }
     .img_title{
-        font-size: 55px;
+        font-size: 40px;
         filter: drop-shadow(2px 2px 11px black);
         margin: 10px;
     }
@@ -266,4 +266,19 @@ input {
 .chackstyle{
     font-size: 22px;
     text-shadow: 1px 2px 6px black;
+}
+
+#importAndEnter{
+    position: absolute;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 18%;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    left: 11%;
+    top:49px;
 }
