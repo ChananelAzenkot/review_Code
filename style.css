@@ -27,6 +27,7 @@ input {
     text-shadow: 1px 2px 3px black;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
+    outline: 2px solid #388d97d8;
 }
 
 .card{
@@ -35,7 +36,7 @@ input {
     font-size: 18px;
     background-image: linear-gradient(to bottom right, #a3a1a1,#388d97d8);
     box-shadow: 1px 2px 13px 1px black;
-    margin: 10px auto;
+    margin: 20px auto;
     border-radius: 5px;
     text-shadow: 1px 2px 12px gray;
     justify-content: center;
