@@ -7,14 +7,6 @@ body {
     height: 100vh;
 }
 
-/* // work on this */
-.container{
-    height: 100%;
-    width: 90%;
-    margin: 0 auto;
-    padding: 5px;
-}
-
 input {
     width: 450px;
     height: 37px;
@@ -26,7 +18,6 @@ input {
     box-shadow: 1px 2px 12px 3px #388d97d8;
     text-shadow: 1px 2px 3px black;
     text-align: center;
-    font-family: 'Varela Round', sans-serif;
     outline: 2px solid #388d97d8;
 }
 
@@ -292,7 +283,6 @@ input {
 
 #importAndEnter{
     font-family: 'Sigmar', cursive;
-    position: absolute;
     display:inline-flex;
     justify-content: center;
     align-items: center;
@@ -307,6 +297,112 @@ input {
     top:90px;
 }
 
-.thetast{
+@media only screen and (device-width : 428px)
+and (device-height : 926px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+    /* Styles for iPhone 13 Pro Max */
+    .titleFirst {
+            font-size: 80px;
+        }
     
+        .img_title {
+            font-size: 80px;
+        }
+    
+        input {
+            width: 65%;
+            height: 70px;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+    
+        .card {
+            height: 100px;
+            width: 65%;
+            font-size: 30px;
+        }
+    
+        .card:hover {
+            height: 60px;
+            width: 90%;
+            font-size: 22px;
+        }
+    
+        #btnenter {
+            height: 60px;
+            width: 150px;
+            font-family: 'Varela Round', sans-serif;
+        }
+    
+        #BtNremoveAll {
+            height: 80px;
+            width: 200px;
+            font-size: 25px;
+            font-family: 'Varela Round', sans-serif;
+        }
+    
+        #btnF {
+            height: 55px;
+            width: 55px;
+            font-size: 22px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    
+        .yes {
+            height: 70px;
+            width: 70px;
+            font-size: 22px;
+        }
+    
+        .no {
+            height: 70px;
+            width: 70px;
+            font-size: 22px;
+        }
+    
+        .bigedit {
+            height: 15%;
+            width: 66%;
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+        }
+    
+        .chacky[type="checkbox"] {
+            height: 30px;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+            margin-top: 0;
+            height: 60px;
+            width: 60px;
+    
+        }
+    
+        .chackstyle {
+            font-size: 18px;
+            display: flex;
+            position: relative;
+            height: 100px;
+            margin-top: 70px;
+
+        }
+    
+        #importAndEnter {
+            display: inline-flex;
+            position: relative;
+            margin-bottom: 80px;
+            height: 70px;
+            width: 40%;
+            font-size: 14px;
+            left: 5%;
+
+        }
 }
