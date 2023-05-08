@@ -307,6 +307,80 @@ input {
     top:90px;
 }
 
-.thetast{
-    
+@media only screen and (max-width: 712px){
+    .titleFirst{
+        font-size: 50px;
+    }
+    .img_title{
+        font-size: 50px;
+    }
+    input{
+        width: 90%;
+        height: 50px;
+        font-size: 30px;
+    }
+    .card{
+        height: 60px;
+        width: 90%;
+        font-size: 22px;
+    }
+        .card:hover{
+            height: 60px;
+            width: 90%;
+            font-size: 22px;
+        }
+    #btnenter{
+        height: 60px;
+        width: 150px;
+    }
+    #BtNremoveAll{
+        height: 60px;
+        width: 150px;
+    }
+    #btnF{
+        height: 45px;
+        width: 45px;
+    }
+    .yes{
+        height: 60px;
+        width: 60px;
+        font-size: 22px;
+    }
+    .no{
+        height: 60px;
+        width: 60px;
+        font-size: 22px;
+    }
+    .bigedit{
+        height: 20%;
+        width: 80%;
+    }
+    .chacky[type="checkbox"]{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        margin-top: 0;
+        margin-bottom: 10px;
+        height: 60px;
+        width: 60px;
+
+    }
+    .chackstyle{
+        font-size: 14px;
+        display:flex;
+        position: flex;
+        height: 100px;
+    }
+    #importAndEnter{
+        display: none;
+        position: relative;
+        margin-top: 50px;
+        height: 50px;
+        width: 10%;
+        font-size: 14px;
+        left: 5%;
+        top: 100px;
+    }
 }
