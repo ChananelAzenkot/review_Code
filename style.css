@@ -297,7 +297,7 @@ input {
     top:90px;
 }
 
-@media only screen and (max-device-width : 428px) {
+@media only screen and (max-device-width : 500px) {
     /* Styles for iPhone 13 Pro Max */
     .titleFirst {
             font-size: 80px;
