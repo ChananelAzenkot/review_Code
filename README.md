@@ -1,6 +1,6 @@
 # To Do List App
 
-AA To-Do List app is a powerful tool for organizing tasks and increasing productivity. It helps you create, manage, and prioritize tasks, set reminders, and track progress. Stay organized, focused, and accomplish your goals efficiently with a To-Do List app.
+A To-Do List app is a powerful tool for organizing tasks and increasing productivity. It helps you create, manage, and prioritize tasks, set reminders, and track progress. Stay organized, focused, and accomplish your goals efficiently with a To-Do List app.
 
 You can open the To Do List App [here](https://chananelazenkot.github.io/review_Code/).
 
