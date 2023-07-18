@@ -4,9 +4,9 @@ AA To-Do List app is a powerful tool for organizing tasks and increasing product
 
 You can open the To Do List App [here](https://chananelazenkot.github.io/review_Code/).
 
-## GamePlay
+## EcoSystem
 
-In the gameplay of a To-Do List app, users can easily add, edit, and delete tasks. They can set due dates, assign priorities, and receive notifications, ensuring efficient task management and completion.
+In the App of a To-Do List app, users can easily add, edit, and delete tasks. They can set due dates, assign priorities, and receive notifications, ensuring efficient task management and completion.
 
 ## Features
 
